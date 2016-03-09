@@ -5,7 +5,7 @@ var FilesystemMock = require("./FilesystemMock");
 
 describe("Finder", function () {
 
-  var Finder = require("../index");
+  var Finder = require("../index").Finder;
 
   it("must be instantiable", function () {
     var finder = new Finder();
@@ -338,7 +338,7 @@ describe("Finder", function () {
 });
 
 describe("Directory", function () {
-  var Finder = require("../index");
+  var Finder = require("../index").Finder;
 
   it("must be able to open a file", function (done) {
     var fs = new FilesystemMock();

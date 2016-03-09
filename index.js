@@ -191,6 +191,7 @@ Finder.prototype.find = function (path, pattern, type, foundCallback, doneCallba
   return self;
 };
 module.exports = Finder;
+module.exports.Finder = Finder;
 
 function CancelEventArgs() {
   this._cancel = false;
@@ -329,3 +330,4 @@ var types = {
 FoundObject.prototype.types = types;
 
 module.exports.types = types;
+module.exports.Finder.types = types;
